@@ -66,3 +66,22 @@ fnm install --lts
 fnm use --lts
 
 ```
+
+---
+<br/>
+
+## 기타 개인 정보 (optional)
+
+### Config
+
+- `/etc/hosts`
+- `~/.ssh/`
+- `~/.google_cert/` -> `.secrets`
+
+
+### Applications
+
+- WireGuard
+- TablePlus
+- Studio 3T
+- Clash Verge

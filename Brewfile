@@ -38,5 +38,6 @@ mas "Menu World Time", id: 1446377255
 mas "Keynote", id: 409183694
 mas "Pages", id: 409201541
 mas "Numbers", id: 409203825
+mas "WireGuard", id: 1451685025
 
 # mas "Xcode", id: 497799835
