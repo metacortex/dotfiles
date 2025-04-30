@@ -1,0 +1,159 @@
+{
+    "workbench.welcome.enabled": false,
+    "window.openFoldersInNewWindow": "on",
+    "atomKeymap.promptV3Features": true,
+
+    "editor.fontSize": 20,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+
+    "workbench.colorTheme": "Dracula Theme",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.theme": "classic",
+    "material-icon-theme.activeIconPack": "react",
+    "problems.autoReveal": false,
+    "javascript.suggest.autoImports": false,
+    "javascript.validate.enable": false,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontWeight": "400",
+    "editor.renderWhitespace": "all",
+    "editor.stickyScroll.enabled": true,
+    "explorer.excludeGitIgnore": true,
+    "editor.minimap.enabled": false,
+    "editor.wordWrap": "on",
+    "editor.detectIndentation": false,
+
+    "workbench.editor.tabSizing": "shrink",
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+
+
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "[json]": {
+        "editor.tabSize": 2
+    },
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.tabSize": 2,
+        "editor.formatOnSave": true
+    },
+    // TypeScript 기본 진단 비활성화 (ESLint만 사용)
+    "typescript.validate.enable": false,
+    "typescript.tsserver.enable": true,
+    // ESLint 설정
+    "eslint.enable": true,
+    "eslint.validate": [
+        "typescript",
+        "typescriptreact"
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.fixAll.eslint": true
+    },
+    // Prettier 설정
+    "prettier.singleQuote": true,
+    "prettier.semi": false,
+    "prettier.tabWidth": 2,
+    "prettier.trailingComma": "es5",
+    "prettier.jsxSingleQuote": true,
+    // 포맷터로 Prettier 사용
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    // 파일 저장 시 공백 및 줄 정리
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+
+
+    // // Controls if quick suggestions should show up while typing
+    // "editor.quickSuggestions": {
+    //     "other": false,
+    //     "comments": false,
+    //     "strings": false
+    // },
+    // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+    "editor.acceptSuggestionOnEnter": "on",
+    // Controls the delay in ms after which quick suggestions will show up.
+    "editor.quickSuggestionsDelay": 100000,
+    // Controls if suggestions should automatically show up when typing trigger characters
+    "editor.suggestOnTriggerCharacters": false,
+    // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+    "editor.tabCompletion": "on",
+    // Controls how suggestions are pre-selected when showing the suggest list
+    "editor.suggestSelection": "recentlyUsed",
+    // Enable parameter hints
+    "editor.parameterHints.enabled": false,
+
+
+    // turn off all suggestions except snippet
+    "javascript.suggest.completeJSDocs": false,
+    "typescript.suggest.completeJSDocs": false,
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggest.filterGraceful": false,
+    "editor.suggest.showClasses": false,
+    "editor.suggest.showColors": false,
+    "editor.suggest.showConstants": false,
+    "editor.suggest.showConstructors": false,
+    "editor.suggest.showCustomcolors": false,
+    "editor.suggest.showDeprecated": false,
+    "editor.suggest.showEnumMembers": false,
+    "editor.suggest.showEnums": false,
+    "editor.suggest.showEvents": false,
+    "editor.suggest.showFields": false,
+    "editor.suggest.showFiles": false,
+    "editor.suggest.showFolders": false,
+    "editor.suggest.showFunctions": false,
+    "editor.suggest.showIcons": false,
+    "editor.suggest.showInterfaces": false,
+    "editor.suggest.showKeywords": false,
+    "editor.suggest.showIssues": false,
+    "editor.suggest.showMethods": false,
+    "editor.suggest.showModules": false,
+    "editor.suggest.showOperators": false,
+    "editor.suggest.showProperties": false,
+    "editor.suggest.showReferences": false,
+    "editor.suggest.showStructs": false,
+    "editor.suggest.showTypeParameters": false,
+    "editor.suggest.showUnits": false,
+    "editor.suggest.showUsers": false,
+    "editor.suggest.showValues": false,
+    "editor.suggest.showVariables": false,
+    "editor.suggest.showWords": false,
+    "javascript.suggest.enabled": false,
+    "javascript.suggest.names": false,
+    "javascript.suggest.paths": false,
+    "typescript.suggest.autoImports": false,
+    "typescript.suggest.enabled": false,
+    "typescript.suggest.paths": false,
+    "git.suggestSmartCommit": false,
+    "javascript.suggest.includeAutomaticOptionalChainCompletions": false,
+    "javascript.suggest.includeCompletionsForImportStatements": false,
+    "javascript.suggest.jsdoc.generateReturns": false,
+    "javascript.suggest.classMemberSnippets.enabled": false,
+    "editor.wordBasedSuggestions": "off",
+    "editor.hover.enabled": false,
+    "editor.hover.sticky": false,
+    "files.associations": {
+        "*.ejs": "ejs"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "never",
+
+}
