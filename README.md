@@ -24,6 +24,11 @@ xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
+현재 shell에 바로 적용
+```bash
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 ### 3️⃣ dotfiles 클론 & 설치
 
 ```bash
