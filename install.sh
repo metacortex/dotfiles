@@ -33,7 +33,7 @@ cp -f ./kitty.conf ~/.config/kitty/kitty.conf
 
 echo "⚡ scm_breeze 설치"
 if [ ! -d "$HOME/.scm_breeze" ]; then
-  git clone git://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
+  git clone https://github.com/scmbreeze/scm_breeze.git ~/.scm_breeze
   ~/.scm_breeze/install.sh
 fi
 
