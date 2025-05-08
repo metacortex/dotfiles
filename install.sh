@@ -14,14 +14,6 @@ which brew >/dev/null || /bin/bash -c "$(curl -fsSL https://raw.githubuserconten
 echo "🔧 mas CLI 선 설치"
 brew list mas >/dev/null 2>&1 || brew install mas
 
-echo "🛍 App Store 로그인 확인"
-if ! mas account >/dev/null 2>&1; then
-  echo "⚠️ App Store에 로그인되어 있지 않습니다."
-  echo "   App Store 앱을 열고 로그인한 후 다시 실행하세요."
-  open -a "App Store"
-  exit 1
-fi
-
 echo "📦 전체 패키지 설치 (brew + cask + mas)"
 brew bundle --file=./Brewfile
 
