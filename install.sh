@@ -59,6 +59,13 @@ echo "🧶 Corepack 활성화 및 Yarn 최신화"
 corepack enable
 corepack prepare yarn@stable --activate
 
+echo "🌐 Google Cloud SDK 설치"
+if [ ! -d "$HOME/google-cloud-sdk" ]; then
+    curl https://sdk.cloud.google.com | bash
+else
+    echo "✅ Google Cloud SDK already installed"
+fi
+
 echo "🧠 VS Code 설정 복원"
 VSCODE_USER="$HOME/Library/Application Support/Code/User"
 cp -f ./vscode/settings.json "$VSCODE_USER/settings.json"
