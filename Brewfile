@@ -1,3 +1,7 @@
+# Taps
+tap "romkatv/powerlevel10k"
+tap "mongodb/brew"
+
 # CLI tools
 brew "git"
 brew "cmake"
@@ -20,7 +24,6 @@ brew "mongosh"
 brew "mongodb-database-tools"
 brew "ffmpeg"
 brew "graphicsmagick"
-brew "google-cloud-sdk"
 brew "stripe"
 brew "fzf"
 
