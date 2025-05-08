@@ -9,6 +9,9 @@
 
 ### 1️⃣ 필수 준비
 
+- Command Line Tools for Xcode 설치  
+다운로드: https://developer.apple.com/download/all/?q=command
+
 - Xcode Command Line Tools 설치
 
 ```bash
