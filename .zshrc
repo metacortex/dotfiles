@@ -26,5 +26,9 @@ eval "$(fnm env --use-on-cd)"
 # scm_breeze
 [[ -s "$HOME/.scm_breeze/scm_breeze.sh" ]] && source "$HOME/.scm_breeze/scm_breeze.sh"
 
+# google cloud sdk
+source "$HOME/google-cloud-sdk/path.zsh.inc"
+source "$HOME/google-cloud-sdk/completion.zsh.inc"
+
 # 환경 변수 비공개 설정
 [ -f "$HOME/.zsh_env" ] && source "$HOME/.zsh_env"
