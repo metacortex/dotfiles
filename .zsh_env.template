@@ -30,5 +30,6 @@ export GITHUB_TOKEN="your_github_token_here"
 export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.secrets/your-credentials.json"
 
 # 기타 예시 (필요 시 주석 해제)
+# export HCLOUD_TOKEN="your_token_here"
 # export OPENAI_API_KEY="your_openai_key"
 # export STRIPE_SECRET_KEY="your_stripe_key"

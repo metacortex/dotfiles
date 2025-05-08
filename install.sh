@@ -72,6 +72,14 @@ fi
 echo "📦 VS Code 확장 설치"
 xargs -n1 code --install-extension < ./vscode/extensions.txt
 
+echo "🛠 유틸리티 툴 설치됨: bat, jq, ripgrep"
+echo "   bat  👉 cat 대체로 하이라이트 + 라인넘버 지원"
+echo "   jq   👉 JSON 파일 빠른 파싱/가공"
+echo "   rg   👉 ripgrep, 초고속 파일 내용 검색 (VSCode 내부도 이걸 씀)"
+
+echo "🌐 HTTPie 설치 완료: 커맨드라인에서 API 테스트용 http 클라이언트"
+echo "   예시: http GET https://httpbin.org/get"
+
 echo "📂 iTerm2 설정 복원 안내"
 echo "👉 iTerm2 > Preferences > General > Preferences 탭으로 가서"
 echo "   ✅ 'Load preferences from a custom folder or URL' 체크"

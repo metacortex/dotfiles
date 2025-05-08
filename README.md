@@ -1,83 +1,118 @@
-# ⚙️ Minimal macOS Dev Environment Setup
+# 🛠 Mac 개발 환경 세팅
+
+이 저장소는 나의 개인 Mac 개발 환경을 빠르게 세팅하기 위한 dotfiles 및 설치 스크립트를 포함합니다.
 
 <br/>
 
-## 📦 Brewfile 포함 내용
 
-### CLI 도구
+## 📦 설치 순서
 
-- `git`, `pyenv`, `python`, `fnm`, `yarn`  
-- `cmake`, `ffmpeg`, `graphicsmagick`, `ssh-copy-id`  
-- `stripe`, `tree`, `mysql-client`, `lzip`, `rsync`, `tmux`  
-- `mongosh`, `mongodb-database-tools`, `fzf`
+### 1️⃣ 필수 준비
 
-### GUI 앱
-
-- `visual-studio-code`, `iterm2`, `kitty`, `google-chrome`  
-- `discord`, `notion`, `slack`, `tableplus`, `studio-3t`  
-- `macs-fan-control`, `gureumkim`, `font-fira-code`
-
-### App Store 앱 (`mas` 사용)
-
-- Menu World Time  
-- Keynote  
-- Pages  
-- Numbers
-
----
-<br/>
-
-## 🎨 Zsh 플러그인 설정
-
-활성화된 플러그인 목록:
-
-- `git`, `z`, `extract`, `colored-man-pages`  
-- `fzf`, `fzf-tab` (탭 자동완성 강화)
-
-> `fzf-tab`은 `~/.oh-my-zsh/custom/plugins`에 자동 설치됩니다.
-
-
----
-<br/>
-
-## 사용 방법
+- Xcode Command Line Tools 설치
 
 ```bash
-git clone https://github.com/metacortex/dotfiles.git ~/dotfiles
-cd ~/dotfiles
-chmod +x install.sh
+xcode-select --install
+```
+
+### 2️⃣ Homebrew 설치 (만약 설치 안 되어 있으면)
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### 3️⃣ dotfiles 클론 & 설치
+
+```bash
+git clone https://github.com/yourname/dotfiles.git
+cd dotfiles
 ./install.sh
-
-# Reload Zsh config
-source ~/.zshrc
-
 ```
 
----
 <br/>
 
-## 설치 후 추가 설정 (optional)
 
-```bash
-pyenv install 3.12.2
-pyenv global 3.12.2
 
-fnm install --lts
-fnm use --lts
+## ✅ 설치되는 주요 구성
 
-```
+### 🧰 CLI 툴
+* git
+* pyenv
+* python
+* fnm
+* yarn
+* bat
+* jq
+* ripgrep
+* httpie (CLI)
+* terraform
 
----
+
+### 💻 GUI 앱 (Homebrew Cask)
+* Visual Studio Code
+* iTerm2
+* Kitty
+* TablePlus
+* Studio 3T
+* BetterDisplay
+* Discord
+* Google Chrome
+* Notion
+* Slack
+* Clash Verge Rev
+
+
+### 🛒 App Store 앱 (mas)
+* WireGuard
+* Keynote
+* Pages
+* Numbers
+* Menu World Time
+
+
 <br/>
 
-## 기타 개인 정보 (optional)
 
-### Config
+
+## 🚀 자동 세팅 내용
+
+* VSCode 세팅 복원 (settings.json, keybindings.json, snippets)
+* iTerm2 설정 안내
+* BetterDisplay 설정 복원 안내
+* WireGuard 설정 복원 안내
+
+
+<br/>
+
+
+
+## 📝 수동 설치 앱
+
+아래 앱들은 자동 설치되지 않으므로 수동으로 다운로드 및 설치해 주세요.
+
+### 1️⃣ Cursor
+다운로드: https://cursor.sh
+
+### 2️⃣ HTTPie Desktop (GUI)
+다운로드: https://httpie.io/download
+
+### 3️⃣ Elasticvue Desktop
+다운로드: https://elasticvue.com/installation
+
+Intel Mac vs Apple Silicon 구분해서 dmg 다운로드
+
+<br/>
+
+
+
+## 🔐 기타 개인 보안 정보
+
+### Local files
 
 - `/etc/hosts`
 - `~/.ssh/`
-- `~/.google_cert/` -> `.secrets`
-
+- `.secrets` 각종 credentials 저장
+    - `~/.google_cert/` -> `.secrets`
 
 ### Applications
 
@@ -85,3 +120,4 @@ fnm use --lts
 - TablePlus
 - Studio 3T
 - Clash Verge
+
